@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'popins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    background-image: url("sports.jpg");
+    background-size: cover;
+}
+header{
+    position: absolute;
+    top: 0;
+    margin-left: 10px;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    position: relative;
+    font-size: 30px;
+    text-decoration: none;
+    color: #d32828;
+    font-weight: 600;
+}
+header ul li{
+    position: relative;
+    display: flex;
+}
+header ul{
+    list-style-type: none;
+}
+header ul li a{
+    display: inline-block;
+    color: chartreuse;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+}
+
+header ul li a{
+    /*list-style-type: lower-greek;*/
+    color: rgb(18, 29, 124);
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: underline;
+}
+header ul li a:hover{
+    color: rgb(83, 209, 226);
+    cursor: pointer;
+    z-index: 10001;
+}
+.container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .logo{
+    color: red;
+    font-size: 30px;
+    font-weight: 200;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*body{
+    background: rgb(164, 184, 164);
+    color: rgb(14, 1, 2);
+}*/
+.container .sport .text{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 400;
+    background: #b8abab;
+    color: rgb(31, 59, 3);
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.container .sport .text p{
+    color: blanchedalmond;
+}
+.container .sport .image{
+    width: 600px;
+    display: flex;
+    padding-left: 50px;
+    margin-top: 50px;
+    justify-content: flex-end;
+}
+.container .sport .image img{
+    max-width: 390px;
+}
+.container .sport .images{
+    position: absolute;
+    left: 40%;
+    bottom: 230px;
+    transform: translateY(-50%);
+    display: flex;
+}
+.container .sport .images li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.container .sport .images li img{
+    max-width: 100px;
+}
+.container .sport .images li:hover{
+    transform: translateY(-15px);
+}
+footer{
+    background:#f9ebeb;
+}

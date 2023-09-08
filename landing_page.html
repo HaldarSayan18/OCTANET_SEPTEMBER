@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--custom css link-->
+    <link rel="stylesheet" type="text/css" href="landing_style.css">
+    <!--box icons links-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Octanet Landing page</title>
+</head>
+<body>
+    <section class="container">
+        <!--navbar start here -->
+        <header>
+            <a href="#" class="logo">SPORTS HUB</a>
+            <ul>
+                <li>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Items</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Login</a>
+                </li>
+            </ul>
+        </header>
+        <div class="sport">
+            <div class="text">
+                <h1>CHOOSE YOUR FAV SPORTS LEGENDS</h1>
+                <p>Register now to explore more about your favourite  sports person of INDIA.</p>
+                <a href="#">View more</a>
+            </div>
+            <div class="image">
+                <img src="sportslogo.png" alt="" class="images">
+            </div>
+            <ul class="images">
+                <li>
+                    <a href="https://en.wikipedia.org/wiki/R_Praggnanandhaa"><img src="pragg.jpg" onclick="imgslider('pragg.jpg');"></a>
+                    <a href="//en.wikipedia.org/wiki/Neeraj_Chopra"><img src="neeraj.jpeg" onclick="imgslider('neeraj.jpeg');"></a>
+                    <a href="https://en.wikipedia.org/wiki/Sunil_Chhetri"><img src="Sunil-Chhetri.png" onclick="imgslider('Sunil-Chhetri.png');"></a>
+                    <a href="https://en.wikipedia.org/wiki/Dhyan_Chand"><img src="Dhyan-Chand.jpg" onclick="imgslider('Dhyan-Chand.jpg');"></a>
+                    <a href="https://en.wikipedia.org/wiki/Sachin_Tendulkar"><img src="Sachin-Tendulkar.jpg" onclick="imgslider('Sachin-Tendulkar.jpg');"></a>
+                    <a href="https://en.wikipedia.org/wiki/P._V._Sindhu"><img src="sindhu.jpg" onclick="imgslider('sindhu.jpg');"></a>
+
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer>Copyright</footer>
+</body>
+</html>
+<script>
+    function imgslider(someThing){
+        document.querySelector('.images').src=someThing;
+    }
+    function changeColor(color){
+        const sec = document.querySelector('.container');
+        sec.style.background = color;
+    }
+</script>
